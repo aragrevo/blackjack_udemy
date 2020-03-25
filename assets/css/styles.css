@@ -1,0 +1,13 @@
+
+.carta {
+    position: relative;
+    width: 150px;
+    left: 100px;
+    margin-left: -75px;
+}
+
+.panel {
+    background-color: #2F4F30;
+    color: white;
+    height: 85vh;
+}
