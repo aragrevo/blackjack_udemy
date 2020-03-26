@@ -23,8 +23,10 @@
                         <div class="row">
                             <div class="col-6 offset-3">
                                 <button id="btnNewGame" class="btn btn-danger w-25 " type="button">Nuevo Juego</button>
-                                <button id="btnGetCard" class="btn btn-primary w-25 " type="button">Pedir</button>
-                                <button id="btnStop" class="btn btn-primary w-25" type="button">Detener</button>
+                                <button id="btnGetCard" disabled class="btn btn-primary w-25 btnGame "
+                                    type="button">Pedir</button>
+                                <button id="btnStop" disabled class="btn btn-primary w-25 btnGame"
+                                    type="button">Detener</button>
                             </div>
                         </div>
                     </div>
@@ -38,14 +40,14 @@
             <div class="row">
                 <div class="col">
                     <h1>Jugador 1 - <small>0</small></h1>
-                    <div id="jugador-cartas">
+                    <div id="jugador-cartas" class="divCard">
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
                     <h1>Computadora - <small>0</small></h1>
-                    <div id="computadora-cartas">
+                    <div id="computadora-cartas" class="divCard">
                     </div>
                 </div>
             </div>
@@ -56,6 +58,9 @@
 
     <script src="assets/js/underscore-min.js"></script>
     <script src="assets/js/juego.js"></script>
+    <script>
+        miModulo.nuevoJuego();
+    </script>
 </body>
 
 </html>
